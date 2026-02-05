@@ -1,10 +1,32 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        String [] folks = {"Logan", "Cui", "Bilal"};
-        System.out.println("Hello, Class!");
 
-        for(var i = 0; i < folks.length; i++){
-            System.out.print(folks[i] + " ");
+
+        String [] groceries = {"Eggs", "Fruit", "Tim Tams"}; //Collection Initializer
+        double [] prices = {13.00, 3.00, 6.50};
+        String foundItem = "";
+        double foundPrice =0.00;
+        boolean isFound = false; //flag variable
+        for(var i = 0; i < groceries.length; i++){
+            //System.out.print(groceries[i] + " ");
+            //Selection structure
+            if(groceries[i].equalsIgnoreCase("Fruit")){
+                isFound = true;
+                
+                foundItem = groceries[i];
+                foundPrice = prices[i];
+                i = groceries.length;  //Why would I do this
+                
+            }
+
         }
+
+        //Let the enduser know that you found the item within the array
+        if(isFound == true){
+            System.out.println(foundItem + " was found in the array for a price of $" + foundPrice);
+        }else{
+            System.out.println("Fruit was not found in the array");
+        }
+
     }
 }
