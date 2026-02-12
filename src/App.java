@@ -1,5 +1,5 @@
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void GroceryList(String[] args) throws Exception {
 
 
         String [] groceries = {"Eggs", "Fruit", "Tim Tams", "Yams"}; //Collection Initializer
