@@ -1,4 +1,4 @@
-public class Interface {
+public class ApartmentManager {
     public static void main(String[] args) throws Exception {
       Apartment aparment_one;
 
